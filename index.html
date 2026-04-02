@@ -8,44 +8,73 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-.hero h1 {
-  font-size: 42px;
-  animation: slideUp 1.2s ease;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8fafc;
 }
 
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-.card {
-  animation: fadeIn 1.5s ease;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+.logo {
+  font-weight: 700;
+  color: #2563eb;
 }
 
 .btn {
-  transition: all 0.3s ease;
+  background: #2563eb;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .btn:hover {
   transform: scale(1.1);
-  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 10px 20px rgba(37,99,235,0.3);
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  animation: fadeIn 1s ease;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.section {
+  text-align: center;
+  padding: 50px;
+}
+
+.card {
+  display: inline-block;
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(20px);}
+  to {opacity:1; transform: translateY(0);}
 }
 </style>
 
@@ -60,38 +89,30 @@
   </a>
 </header>
 
-<section class="hero">
+<div class="hero">
   <h1>Ship Smart 🚀 Deliver Fast</h1>
   <p>Express Delivery, Zero Delay</p>
 
-  <div class="track-box">
-    <input placeholder="Enter Tracking ID">
-    <button class="btn">Track</button>
-  </div>
-</section>
+  <input placeholder="Enter Tracking ID">
+  <button class="btn">Track</button>
+</div>
 
-<section class="section">
+<div class="section">
   <h2>Our Services</h2>
-  <div class="cards">
-    <div class="card">📦 Parcel Delivery</div>
-    <div class="card">📄 Document Courier</div>
-    <div class="card">⚡ Express Shipping</div>
-  </div>
-</section>
+  <div class="card">📦 Parcel Delivery</div>
+  <div class="card">📄 Document Courier</div>
+  <div class="card">⚡ Express Shipping</div>
+</div>
 
-<section class="section">
+<div class="section">
   <h2>About Us</h2>
   <p>Serving since 2000 with trusted courier partners like DTDC, Shri Maruti, Air Star & Pushpak.</p>
-</section>
+</div>
 
-<section class="section">
+<div class="section">
   <h2>Contact</h2>
   <p>📞 9314525385 / 9887445555</p>
   <p>📍 Chomu, Jaipur</p>
-</section>
-
-<div class="footer">
-  © 2026 Vijay Courier Services
 </div>
 
 </body>
