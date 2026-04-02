@@ -7,173 +7,66 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-<!-- LOTTIE SCRIPT -->
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f9fafb;
-}
+body { margin:0; font-family:'Poppins'; background:#f9fafb; }
+header { display:flex; justify-content:space-between; padding:20px; background:white; }
+nav a { margin:0 10px; text-decoration:none; color:#333; }
 
-/* HEADER */
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: white;
-}
+.hero { display:flex; align-items:center; justify-content:space-between; padding:60px; flex-wrap:wrap; }
 
-.logo {
-  font-weight: 700;
-  color: #2563eb;
-}
+.hero-text h1 { font-size:42px; }
 
-/* BUTTON */
-.btn {
-  background: #2563eb;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-}
+.btn { background:#2563eb; color:white; padding:10px 18px; border:none; border-radius:6px; }
 
-/* HERO */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px 10%;
-  flex-wrap: wrap;
-}
+.section { padding:60px; text-align:center; }
 
-.hero-text {
-  max-width: 500px;
-}
+.cards { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
 
-.hero-text h1 {
-  font-size: 48px;
-  animation: fadeUp 1s ease;
-}
+.card { background:white; padding:20px; border-radius:10px; width:200px; }
 
-.hero-text p {
-  color: #666;
-  margin-top: 10px;
-}
-
-/* INPUT */
-input {
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  width: 250px;
-}
-
-/* SECTION */
-.section {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-/* CARDS */
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  width: 220px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-}
-
-/* ANIMATION */
-@keyframes fadeUp {
-  from {opacity:0; transform: translateY(40px);}
-  to {opacity:1; transform: translateY(0);}
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 30px;
-  background: #111;
-  color: white;
-}
+.footer { background:#111; color:white; text-align:center; padding:20px; }
 </style>
-
 </head>
 
 <body>
 
 <header>
-  <div class="logo">🚚 Vijay Courier</div>
-  <a href="https://wa.me/919887445555">
-    <button class="btn">WhatsApp</button>
-  </a>
+  <div><b>🚚 Vijay Courier</b></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<!-- HERO -->
 <div class="hero">
-
   <div class="hero-text">
     <h1>Ship Smart 🚀 Deliver Fast</h1>
     <p>Express Delivery, Zero Delay</p>
-
-    <div style="margin-top:20px;">
-      <input placeholder="Enter Tracking ID">
-      <button class="btn">Track</button>
-    </div>
+    <input placeholder="Tracking ID">
+    <button class="btn">Track</button>
   </div>
 
-  <!-- LOTTIE ANIMATION -->
-  <lottie-player 
-    src="https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json"
-    background="transparent"  
-    speed="1"  
-    style="width: 350px; height: 350px;"  
-    loop  
-    autoplay>
+  <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json"
+    background="transparent" speed="1"
+    style="width:300px;height:300px;" loop autoplay>
   </lottie-player>
-
 </div>
 
-<!-- SERVICES -->
 <div class="section">
   <h2>Our Services</h2>
   <div class="cards">
-    <div class="card">📦 Parcel Delivery</div>
-    <div class="card">📄 Document Courier</div>
-    <div class="card">⚡ Express Shipping</div>
+    <div class="card">Parcel Delivery</div>
+    <div class="card">Document Courier</div>
+    <div class="card">Express Shipping</div>
   </div>
 </div>
 
-<!-- ABOUT -->
-<div class="section">
-  <h2>About Us</h2>
-  <p>Serving since 2000 with trusted courier partners like DTDC, Shri Maruti, Air Star & Pushpak.</p>
-</div>
-
-<!-- CONTACT -->
-<div class="section">
-  <h2>Contact</h2>
-  <p>📞 9314525385 / 9887445555</p>
-  <p>📍 Chomu, Jaipur</p>
-</div>
-
-<!-- FOOTER -->
 <div class="footer">
-  © 2026 Vijay Courier Services
+  © Vijay Courier Services
 </div>
 
 </body>
