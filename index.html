@@ -2,105 +2,28 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vijay Courier Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 body{margin:0;font-family:Poppins;background:#0f172a;color:white;}
+header{display:flex;justify-content:space-between;padding:20px 50px;background:#020617;}
+nav a{color:white;margin:0 10px;text-decoration:none;}
 
-header{
-display:flex;
-justify-content:space-between;
-padding:20px 50px;
-background:#020617;
-}
+.hero{padding:100px 50px;background:linear-gradient(to right,#020617,#1e3a8a);}
+.hero h1{font-size:48px;}
+.btn{background:#ef4444;padding:12px 20px;border:none;color:white;}
 
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-}
+.track{background:white;color:black;padding:20px;border-radius:10px;margin-top:20px;}
 
-/* HERO */
-.hero{
-background:linear-gradient(to right,#020617,#1e3a8a);
-padding:100px 50px;
-display:flex;
-justify-content:space-between;
-flex-wrap:wrap;
-}
+.section{padding:80px;text-align:center;background:#f9fafb;color:black;}
+.cards{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
+.card{background:white;padding:20px;border-radius:10px;width:250px;}
 
-.hero h1{
-font-size:50px;
-}
-
-.hero p{
-color:#cbd5f5;
-}
-
-.btn{
-background:#ef4444;
-color:white;
-padding:12px 20px;
-border:none;
-border-radius:6px;
-}
-
-/* TRACK BOX */
-.track{
-background:white;
-color:black;
-padding:20px;
-border-radius:10px;
-margin-top:20px;
-}
-
-input{
-padding:10px;
-margin:5px;
-}
-
-/* SECTION */
-.section{
-padding:80px 20px;
-text-align:center;
-background:#f9fafb;
-color:black;
-}
-
-/* CARDS */
-.cards{
-display:flex;
-gap:20px;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-width:250px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
-}
-
-/* CTA */
-.cta{
-background:#1e3a8a;
-padding:60px;
-text-align:center;
-}
-
-/* FOOTER */
-.footer{
-background:#020617;
-padding:30px;
-text-align:center;
-}
+.footer{background:#020617;padding:30px;text-align:center;}
 </style>
-
 </head>
 
 <body>
@@ -108,26 +31,22 @@ text-align:center;
 <header>
 <b>🚚 Vijay Courier</b>
 <nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
 </nav>
 </header>
 
 <div class="hero">
-
-<div>
-<h1>Fast & Secure Courier</h1>
+<h1>Fast & Secure Courier Services</h1>
 <p>Express Delivery, Zero Delay</p>
 
 <div class="track">
 <input placeholder="Tracking ID">
 <button class="btn">Track</button>
 </div>
-
-</div>
-
 </div>
 
 <div class="section">
@@ -140,17 +59,12 @@ text-align:center;
 </div>
 
 <div class="section">
-<h2>Our Clients</h2>
+<h2>Trusted Clients</h2>
 <div class="cards">
 <div class="card">Borosil</div>
 <div class="card">Whirlpool</div>
 <div class="card">Shriram Life Insurance</div>
 </div>
-</div>
-
-<div class="cta">
-<h2>Need Fast Delivery?</h2>
-<button class="btn">Book Now</button>
 </div>
 
 <div class="footer">
