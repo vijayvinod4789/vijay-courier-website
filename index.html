@@ -8,63 +8,99 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Poppins;background:#fff;color:#333;}
-header{display:flex;justify-content:space-between;padding:20px 50px;background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);}
-nav a{margin:0 15px;text-decoration:none;color:#333;font-weight:500;}
+body{margin:0;font-family:Poppins;background:#0f172a;color:white;}
 
-.hero{
-background:linear-gradient(to right,#0f172a,#1e3a8a);
+header{
+display:flex;
+justify-content:space-between;
+padding:20px 50px;
+background:#020617;
+}
+
+nav a{
 color:white;
+margin:0 15px;
+text-decoration:none;
+}
+
+/* HERO */
+.hero{
+background:linear-gradient(to right,#020617,#1e3a8a);
 padding:100px 50px;
 display:flex;
 justify-content:space-between;
 flex-wrap:wrap;
 }
 
-.hero h1{font-size:50px;margin-bottom:10px;}
-.hero p{color:#ddd;}
+.hero h1{
+font-size:50px;
+}
 
-.btn{background:#ef4444;color:white;padding:12px 20px;border:none;border-radius:6px;}
+.hero p{
+color:#cbd5f5;
+}
 
-.track-box{
+.btn{
+background:#ef4444;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:6px;
+}
+
+/* TRACK BOX */
+.track{
 background:white;
+color:black;
 padding:20px;
 border-radius:10px;
 margin-top:20px;
+}
+
+input{
+padding:10px;
+margin:5px;
+}
+
+/* SECTION */
+.section{
+padding:80px 20px;
+text-align:center;
+background:#f9fafb;
 color:black;
 }
 
-input{padding:10px;width:200px;margin:5px;}
-
-.section{padding:80px 20px;text-align:center;}
-
-.cards{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
+/* CARDS */
+.cards{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
 
 .card{
 background:white;
 padding:25px;
 border-radius:10px;
 width:250px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-transition:0.3s;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
-.card:hover{transform:translateY(-10px);}
-
+/* CTA */
 .cta{
 background:#1e3a8a;
-color:white;
 padding:60px;
 text-align:center;
 }
 
+/* FOOTER */
 .footer{
-background:#111;
-color:white;
+background:#020617;
 padding:30px;
 text-align:center;
 }
 </style>
+
 </head>
 
 <body>
@@ -72,27 +108,28 @@ text-align:center;
 <header>
 <b>🚚 Vijay Courier</b>
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
 </nav>
 </header>
 
-<!-- HERO -->
 <div class="hero">
-<div>
-<h1>Fast & Secure Courier Services</h1>
-<p>Serving Since 2000 | Express Delivery, Zero Delay</p>
 
-<div class="track-box">
+<div>
+<h1>Fast & Secure Courier</h1>
+<p>Express Delivery, Zero Delay</p>
+
+<div class="track">
 <input placeholder="Tracking ID">
 <button class="btn">Track</button>
 </div>
-</div>
+
 </div>
 
-<!-- SERVICES -->
+</div>
+
 <div class="section">
 <h2>Our Services</h2>
 <div class="cards">
@@ -102,13 +139,6 @@ text-align:center;
 </div>
 </div>
 
-<!-- ABOUT -->
-<div class="section">
-<h2>About Company</h2>
-<p>Vijay Courier Services has been providing reliable logistics since 2000 with partners like DTDC & Shri Maruti.</p>
-</div>
-
-<!-- CLIENTS -->
 <div class="section">
 <h2>Our Clients</h2>
 <div class="cards">
@@ -118,15 +148,13 @@ text-align:center;
 </div>
 </div>
 
-<!-- CTA -->
 <div class="cta">
 <h2>Need Fast Delivery?</h2>
 <button class="btn">Book Now</button>
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
-© 2026 Vijay Courier Services
+© Vijay Courier Services
 </div>
 
 </body>
