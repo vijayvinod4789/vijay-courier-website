@@ -6,19 +6,64 @@
 <title>Vijay Courier Services</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <style>
-body{margin:0;font-family:Poppins;background:#f9fafb;}
-header{display:flex;justify-content:space-between;padding:20px;background:white;}
-nav a{margin:0 10px;text-decoration:none;color:#333;}
-.hero{display:flex;align-items:center;justify-content:space-between;padding:60px;flex-wrap:wrap;}
-.hero-text h1{font-size:42px;}
-.btn{background:#2563eb;color:white;padding:10px 18px;border:none;border-radius:6px;}
-.section{text-align:center;padding:60px;}
+body{margin:0;font-family:Poppins;background:#fff;color:#333;}
+header{display:flex;justify-content:space-between;padding:20px 50px;background:white;box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+nav a{margin:0 15px;text-decoration:none;color:#333;font-weight:500;}
+
+.hero{
+background:linear-gradient(to right,#0f172a,#1e3a8a);
+color:white;
+padding:100px 50px;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+.hero h1{font-size:50px;margin-bottom:10px;}
+.hero p{color:#ddd;}
+
+.btn{background:#ef4444;color:white;padding:12px 20px;border:none;border-radius:6px;}
+
+.track-box{
+background:white;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+color:black;
+}
+
+input{padding:10px;width:200px;margin:5px;}
+
+.section{padding:80px 20px;text-align:center;}
+
 .cards{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
-.card{background:white;padding:20px;border-radius:10px;width:200px;}
-.footer{background:#111;color:white;text-align:center;padding:20px;}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+width:250px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{transform:translateY(-10px);}
+
+.cta{
+background:#1e3a8a;
+color:white;
+padding:60px;
+text-align:center;
+}
+
+.footer{
+background:#111;
+color:white;
+padding:30px;
+text-align:center;
+}
 </style>
 </head>
 
@@ -30,24 +75,24 @@ nav a{margin:0 10px;text-decoration:none;color:#333;}
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="services.html">Services</a>
-<a href="gallery.html">Gallery</a>
 <a href="contact.html">Contact</a>
 </nav>
 </header>
 
+<!-- HERO -->
 <div class="hero">
-<div class="hero-text">
-<h1>Ship Smart 🚀 Deliver Fast</h1>
-<p>Express Delivery, Zero Delay</p>
+<div>
+<h1>Fast & Secure Courier Services</h1>
+<p>Serving Since 2000 | Express Delivery, Zero Delay</p>
+
+<div class="track-box">
 <input placeholder="Tracking ID">
 <button class="btn">Track</button>
 </div>
-
-<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json"
-background="transparent" speed="1"
-style="width:300px;height:300px;" loop autoplay></lottie-player>
+</div>
 </div>
 
+<!-- SERVICES -->
 <div class="section">
 <h2>Our Services</h2>
 <div class="cards">
@@ -57,8 +102,15 @@ style="width:300px;height:300px;" loop autoplay></lottie-player>
 </div>
 </div>
 
+<!-- ABOUT -->
 <div class="section">
-<h2>Trusted By</h2>
+<h2>About Company</h2>
+<p>Vijay Courier Services has been providing reliable logistics since 2000 with partners like DTDC & Shri Maruti.</p>
+</div>
+
+<!-- CLIENTS -->
+<div class="section">
+<h2>Our Clients</h2>
 <div class="cards">
 <div class="card">Borosil</div>
 <div class="card">Whirlpool</div>
@@ -66,7 +118,16 @@ style="width:300px;height:300px;" loop autoplay></lottie-player>
 </div>
 </div>
 
-<div class="footer">© Vijay Courier Services</div>
+<!-- CTA -->
+<div class="cta">
+<h2>Need Fast Delivery?</h2>
+<button class="btn">Book Now</button>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+© 2026 Vijay Courier Services
+</div>
 
 </body>
 </html>
